@@ -152,10 +152,6 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
     android.hardware.renderscript@1.0-impl
 
-# Doze
-PRODUCT_PACKAGES += \
-    XiaomiDoze
-
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
@@ -294,9 +290,11 @@ PRODUCT_PACKAGES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
+    init.parts.rc \
     init.qcom.rc \
     init.qcom.usb.rc \
     init.recovery.qcom.rc \
+    init.spectrum.rc \
     init.target.rc \
     init.target.performance.rc \
     ueventd.qcom.rc
@@ -387,6 +385,11 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
 		WfdCommon
+
+# Xiaomi
+PRODUCT_PACKAGES += \
+    XiaomiDoze \
+    XiaomiParts
 
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/msm8998-common/msm8998-common-vendor.mk)
