@@ -538,10 +538,6 @@ vendor/lib64/sensors.ssc.so
 
 # Thermal - from OnePlus5T PKQ1.180716.001
 vendor/bin/msm_irqbalance|117d7c8a8f6f12b3615ec8ab676231df93d277f1
-<<<<<<< HEAD
-vendor/etc/msm_irqbalance.conf|6a9a7945b8902e770d12ed4f99ba9829e9c877fc
-=======
->>>>>>> arian/lineage-16.0
 
 # Thermal
 vendor/bin/thermal-engine
